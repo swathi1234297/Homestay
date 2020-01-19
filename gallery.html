@@ -1,0 +1,204 @@
+<html>
+    <head>
+        <title>SWATHI CREATIONS</title>
+        <style>
+        .slideshow{
+            margin: 0 auto;
+            padding-top: 50px;
+            height:700px;
+            background: skyblue;
+            box-sizing: border-box;
+        }
+        .content{
+            margin: auto;
+            width: 190px;
+            perspective: 1000px;
+            position: relative;
+            padding-top: 80px;
+        }
+        .content-carrousel{
+            width: 100%;
+            position:absolute;
+            float: right;
+            animation:rotar 15s infinite linear;
+            transform-style: preserve-3d;
+        }
+        .content-carrousel:hover{
+            animation-play-state: paused;
+            cursor: pointer;
+        }
+        .content-carrousel figure{
+            width:100%;
+            height:120px;
+            border:1px solid #4d4d4d;
+            overflow: hidden;
+            position:absolute;
+
+        }
+        .content-carrousel figure:nth-child(1){
+            transform: rotateY(0deg) translateZ(300px);
+        }
+        .content-carrousel figure:nth-child(2){
+            transform: rotateY(40deg) translateZ(300px);
+        }
+        .content-carrousel figure:nth-child(3){
+            transform: rotateY(80deg) translateZ(300px);
+        }
+        .content-carrousel figure:nth-child(4){
+            transform: rotateY(120deg) translateZ(300px);
+        }
+        .content-carrousel figure:nth-child(5){
+            transform: rotateY(160deg) translateZ(300px);
+        }
+        .content-carrousel figure:nth-child(6){
+            transform: rotateY(200deg) translateZ(300px);
+        }
+        
+        .content-carrousel figure:nth-child(7){
+            transform: rotateY(240deg) translateZ(300px);
+        }
+        .content-carrousel figure:nth-child(8){
+            transform: rotateY(280deg) translateZ(300px);
+        }
+        .content-carrousel figure:nth-child(9){
+            transform: rotateY(320deg) translateZ(300px);
+        }
+        .content-carrousel figure:nth-child(10){
+            transform: rotateY(340deg) translateZ(300px);
+        }
+
+        .shadow{
+            position: absolute;
+            box-shadow: 0px 0px 20px 0px #000;
+            border-radius: 2px;
+        }
+        .content-carrousel img{
+            image-rendering: auto;
+            transition: all 300ms;
+            width: 100%;
+            height: 100%;
+        }
+
+        .content-carrousel img:hover{
+            transform: scale(1.2);
+            transition: all 300ms;
+
+        }
+
+        @keyframes rotar{
+            from{
+                transform: rotateY(0deg);
+            } to{
+                transform: rotateY(360deg);
+            }
+            }
+
+            .div1{
+    margin:0;
+    padding: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+
+ul{
+    float: right;
+    list-style-type:none;
+
+}
+
+ul li{
+    display:inline-block;
+    color: blue;
+    transform: translate(-50%,-50%);
+}
+
+ul li a{
+    text-decoration: none;
+    color:green;
+    padding:5px 20px;;
+    border:1px solid red;
+    transition:0.6s ease;
+   
+}
+
+ul li a:hover{
+background-color:green;
+color:red;
+}
+
+ul li.active a{
+    background-color:black;
+    color:#fff;
+
+}
+
+.logo img{
+    float: left;
+    width:200px;
+    height: 150px;
+}
+
+.main{
+    max-width: 1200px;
+    margin:auto;
+}
+
+            
+        
+
+
+        </style>
+        
+    </head>
+    <body>
+        <h1><font color="red"><center>Photo Gallery</center><font></h1>
+        
+        <header>
+            <div class="main">
+                <div class="logo">
+                    <img src="C:\Users\user\Desktop\practice\homestay\images\1111.jpg">
+                </div>
+
+                <ul>
+                    <li class="active"><a href="C:\Users\user\Desktop\practice\homestay\home.html">Home</a></li>
+                    <li class="active"><a href="C:\Users\user\Desktop\practice\homestay\services.html">Facilities</a></li>
+                    <li class="active"><a href="C:\Users\user\Desktop\practice\homestay\gallery.html">Gallery</a></li>
+                    <li class="active"><a href="C:\Users\user\Desktop\practice\homestay\about.html">About</a></li>
+                    <li class="active"><a href="C:\Users\user\Desktop\practice\homestay\contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <h1><font color="blue"><marquee><i>Welcome to our homestay photo gallery.Simple homestay with a great serviceand good facilities</i></marquee></font></h1>
+                
+        </header>
+        
+        <section class="slideshow">
+            <div class="content">
+                <div class="content-carrousel">
+                    <figure class="shadow"><img src="C:\Users\user\Desktop\practice\homestay\images\1.jpg"></figure>
+                    
+                    <figure class="shadow"><img src="C:\Users\user\Desktop\practice\homestay\images\2.jpg"></figure>
+                    
+                    <figure class="shadow"><img src="C:\Users\user\Desktop\practice\homestay\images\3.jpg"></figure>
+                    
+                    <figure class="shadow"><img src="C:\Users\user\Desktop\practice\homestay\images\4.jpg"></figure>
+                    
+                    <figure class="shadow"><img src="C:\Users\user\Desktop\practice\homestay\images\5.jpg"></figure>
+                    
+                    <figure class="shadow"><img src="C:\Users\user\Desktop\practice\homestay\images\6.jpg"></figure>
+                    
+                    <figure class="shadow"><img src="C:\Users\user\Desktop\practice\homestay\images\7.jpg"></figure>
+                    
+                    <figure class="shadow"><img src="C:\Users\user\Desktop\practice\homestay\images\8.jpg"></figure>
+                    
+                    <figure class="shadow"><img src="C:\Users\user\Desktop\practice\homestay\images\9.jpg"></figure>
+                    
+                    <figure class="shadow"><img src="C:\Users\user\Desktop\practice\homestay\images\10.jpg"></figure>
+
+                </div>
+            </div>
+        </section>
+
+      </body>
+      <body background="C:\Users\user\Desktop\practice\homestay\images\15.jpg"></body>
+  </html>
